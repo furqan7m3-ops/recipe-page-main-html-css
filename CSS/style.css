@@ -15,7 +15,21 @@
     --text-color-dark: hsl(24, 5%, 18%);
     --title-font: "Young Serif", serif;
     --text-font: "Outfit", sans-serif;
+    --line-color:hsl(30, 18%, 87%);
+    font-size: 13px;
 }
+
+
+
+hr{
+    display: block;
+    border:0;
+    background-color: var(--line-color);
+    width: 100%;
+    height:1px;
+    margin-block: 1rem;
+}
+
 
 body{
     font-family: var(--text-font);
@@ -35,7 +49,9 @@ body{
 }
 
 .recipe-description{
+    margin-top: 1rem;
     margin-bottom: 1.4rem;
+    line-height: 1.6;
 }
 
 .recipe-section--prep{
@@ -62,6 +78,7 @@ body{
 .section-title--prep{
     color: var(--heading-color-dark);
     font-family: var(--text-font);
+    font-weight: 600;
 }
 
 .recipe-section--prep > ul{
@@ -89,18 +106,45 @@ body{
     margin-top:1rem;
 }
 
+table {
+  border-collapse: collapse; /* ensures borders don't double up */
+  width: 100%;
+}
+
+th, td {
+  border: none; 
+  border-bottom: 1px solid var(--line-color); 
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+
+td:first-child{
+    color:var(--text-color-light);
+}
+
+td:last-child{
+    color: var(--heading-color);
+    font-weight: 700;
+}
+
+
+
 .attribution { font-size: 0.8rem; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
 
 @media screen and (min-width: 768px) {
+    :root{
+        font-size: 16px;
+    }
+    
     body{
         background-color: var(--bg-color);
         padding:2rem;
     }
 
     .recipe-article{
-        max-width: 80%;
+        max-width: 70%;
         background-color: white;
         margin-inline: auto;
         border-radius: 1rem;
