@@ -1,8 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
 * ,*::after, *::before{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
+
+:root{
+    --bg-color:hsl(330, 100%, 98%);
+    --heading-color:hsl(14, 45%, 36%);
+    --heading-color-dark:hsl(332, 51%, 32%);
+    --text-color-light:hsl(30, 10%, 34%);
+    --text-color-dark: hsl(24, 5%, 18%);
+    --title-font: "Young Serif", serif;
+    --text-font: "Outfit", sans-serif;
+}
+
+body{
+    font-family: var(--text-font);
+}
+
+.recipe-article{
+    padding:2rem 1.5rem;
+}
+
+.recipe-description{
+    margin-bottom: 1.4rem;
+}
+
+.recipe-section--prep{
+     background-color: var(--bg-color);
+     padding:1rem;
+     margin-bottom: 1rem;
+}
+
+.recipe-title{
+    font-weight: 700;
+}
+
+.recipe-title, .section-title{
+    color:var(--text-color-dark);
+    font-family: var(--title-font);
+}
+
+.section-title{
+    color:var(--heading-color);
+    font-weight: 600;
+}
+
+
+.section-title--prep{
+    color: var(--heading-color-dark);
+    font-family: var(--text-font);
+}
+
+.recipe-section--prep > ul{
+    margin-left: 0.8rem;
+}
+
+.section-list{
+    padding:0.5rem;
+}
+
+.section-list-item{
+    color: var(--text-color-dark);
+    margin-block: 1rem;
+}
+
+.section-list-item > span{
+    font-weight: 600;
+}
+
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
