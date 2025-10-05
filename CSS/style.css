@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
 
+/* For mobile */
 * ,*::after, *::before{
     box-sizing: border-box;
     margin: 0;
@@ -132,7 +133,7 @@ td:last-child{
 .attribution { font-size: 0.8rem; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
-
+/* For tablets and Desktops */
 @media screen and (min-width: 768px) {
     :root{
         font-size: 16px;
